@@ -14,8 +14,14 @@ buttonsArr.forEach(btn=>{
         }
 
             else if(event.target.innerText=="="){
-                str=eval(str);
-                display.value=str;
+                if(str==""){
+                    display.value="0";  
+                }
+                else{
+                    str=eval(str);
+                    display.value=str;
+                }
+                
             }
             
         else{
